@@ -3,177 +3,321 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b0b0b">
-  <meta name="description" content="Zami Wedding Photography — timeless wedding, engagement and portrait photography.">
-  <title>Zami Wedding Photography | Timeless Stories</title>
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="ZaMi Wedding Studio in Kegalle, Sri Lanka. Wedding photography, cinematic films, engagements, birthdays and more. Every Moment, Forever Remembered.">
+  <title>ZaMi Wedding Studio | Every Moment, Forever Remembered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#090909;--panel:#121212;--gold:#d7b56d;--gold2:#f0d99c;--text:#f7f3ea;--muted:#b5b0a5;--line:rgba(215,181,109,.25)}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-    a{color:inherit;text-decoration:none} img{display:block;width:100%;height:100%;object-fit:cover}
-    .wrap{width:min(1160px,92%);margin:auto}
-    .topbar{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{font-family:Georgia,serif;letter-spacing:1.4px;font-size:19px}.brand span{color:var(--gold)}
-    .navlinks{display:flex;align-items:center;gap:25px;font-size:12px;text-transform:uppercase;letter-spacing:1.4px;color:#e5dfd2}
-    .navlinks a:hover{color:var(--gold)} .menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px}
-    .hero{min-height:670px;display:grid;place-items:center;text-align:center;position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.3),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85') center/cover}
-    .hero:after{content:"";position:absolute;inset:18px;border:1px solid rgba(215,181,109,.35);z-index:-1}
-    .hero-content{max-width:820px;padding:90px 20px}.eyebrow{color:var(--gold2);font-size:11px;letter-spacing:4px;text-transform:uppercase}
-    h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.1}h1{font-size:clamp(44px,7vw,86px);margin:22px 0}h1 em{color:var(--gold2);font-weight:400}.hero p{max-width:580px;margin:0 auto 30px;color:#eee6d7;font-size:16px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 23px;border:1px solid var(--gold);color:var(--gold2);text-transform:uppercase;letter-spacing:1.6px;font-size:11px;transition:.2s}
-    .btn:hover{background:var(--gold);color:#111}.btn.fill{background:var(--gold);color:#111}.btn.fill:hover{background:var(--gold2)}
-    section{padding:92px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.section-head h2{font-size:clamp(34px,4vw,52px);margin:12px 0 15px}.section-head p{color:var(--muted);margin:0}.goldline{width:52px;height:1px;background:var(--gold);margin:20px auto}
-    .intro{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.intro-image{height:520px;position:relative;padding:0 25px 25px 0}.intro-image:after{content:"";position:absolute;right:0;bottom:0;width:70%;height:70%;border:1px solid var(--gold);z-index:-1}
-    .intro-image img{position:relative;z-index:1}.intro-copy h2{font-size:clamp(34px,4vw,50px);margin:15px 0}.intro-copy p{color:var(--muted)}.signature{font-family:Georgia,serif;color:var(--gold2);font-style:italic;font-size:23px;margin-top:24px}
-    .services{background:#101010}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);background:#0b0b0b;transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-5px);border-color:var(--gold)}.card-img{height:270px}.card-copy{padding:24px}.card h3{font-family:Georgia,serif;font-size:24px;font-weight:400;margin:0 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}
-    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:280px;gap:12px}.gallery-item{overflow:hidden;position:relative;background:#181818}.gallery-item:first-child{grid-row:span 2}.gallery-item img{transition:transform .6s}.gallery-item:hover img{transform:scale(1.05)}.gallery-item:after{content:"";position:absolute;inset:0;border:1px solid rgba(215,181,109,.12);pointer-events:none}
-    .quote{background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.8)),url('https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1800&q=80') center/cover;text-align:center}.quote blockquote{font-family:Georgia,serif;font-size:clamp(25px,4vw,42px);max-width:850px;margin:0 auto 22px}.quote p{color:var(--gold2);letter-spacing:2px;text-transform:uppercase;font-size:11px}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact-copy h2{font-size:clamp(36px,4vw,52px);margin:12px 0}.contact-copy p{color:var(--muted)}.contact-box{border:1px solid var(--line);padding:28px}.contact-row{padding:14px 0;border-bottom:1px solid var(--line)}.contact-row:last-child{border:0}.contact-row small{display:block;color:var(--gold);text-transform:uppercase;letter-spacing:1.5px;font-size:10px}.contact-row strong{font-weight:400}
-    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-inner span{color:var(--gold2)}
-    .whatsapp{position:fixed;right:20px;bottom:20px;z-index:30;background:#1fbd62;color:#07190d;border-radius:999px;padding:13px 18px;font-size:13px;font-weight:bold;box-shadow:0 5px 25px #0008}
-    @media(max-width:760px){nav{min-height:68px}.menu{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:#0b0b0b;padding:22px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.hero{min-height:590px}.intro,.contact-grid{grid-template-columns:1fr}.intro-image{height:390px}.cards{grid-template-columns:1fr}.card-img{height:300px}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px}.gallery-item:first-child{grid-row:span 2}.gallery-item:last-child{display:none}section{padding:68px 0}.whatsapp{right:12px;bottom:12px}}
+    :root{--bg:#090909;--panel:#111;--gold:#d6b36a;--gold-light:#f0dba6;--text:#f8f5ee;--muted:#b9b4a9;--line:rgba(214,179,106,.28)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:85px}
+    body{background:var(--bg);color:var(--text);font-family:Montserrat,Arial,sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    img{display:block;width:100%}
+    .wrap{width:min(1160px,90%);margin-inline:auto}
+    .eyebrow{text-transform:uppercase;letter-spacing:.24em;font-size:.72rem;color:var(--gold);font-weight:600}
+    h1,h2,h3,.brand{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.08}
+    h2{font-size:clamp(2.4rem,5vw,4rem);margin:.6rem 0 1rem}
+    p{color:var(--muted)}
+    .gold{color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:13px 22px;border:1px solid var(--gold);color:var(--gold-light);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;transition:.25s;cursor:pointer}
+    .btn:hover{background:var(--gold);color:#100e09}
+    .btn.filled{background:var(--gold);color:#100e09}
+    .btn.filled:hover{background:var(--gold-light)}
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(9,9,9,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-size:1.8rem;letter-spacing:.06em;white-space:nowrap}
+    .brand small{display:block;font:500 .53rem Montserrat,sans-serif;letter-spacing:.28em;color:var(--muted);text-transform:uppercase;margin-top:2px}
+    .nav-links{display:flex;align-items:center;gap:25px}
+    .nav-links a{font-size:.69rem;letter-spacing:.1em;text-transform:uppercase;color:#eee;transition:color .2s}
+    .nav-links a:hover{color:var(--gold)}
+    .menu-btn{display:none;background:none;color:var(--gold);border:1px solid var(--line);padding:8px 12px;font-size:1.2rem}
+    .hero{min-height:690px;min-height:min(820px,calc(100svh - 78px));display:grid;place-items:center;text-align:center;position:relative;isolation:isolate;overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2200&q=85") center 43%/cover no-repeat;transform:scale(1.02)}
+    .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.35),rgba(0,0,0,.72)),linear-gradient(0deg,#090909 0%,transparent 32%,rgba(0,0,0,.2) 100%)}
+    .hero-content{padding:90px 0;max-width:900px}
+    .hero h1{font-size:clamp(3.6rem,9vw,7.7rem);margin:20px 0;letter-spacing:-.025em}
+    .hero h1 span{display:block;color:var(--gold-light);font-style:italic}
+    .hero p{max-width:610px;margin:0 auto 28px;color:#f0ece4;font-size:1rem}
+    .hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .hero-note{margin-top:44px!important;font-size:.7rem!important;letter-spacing:.22em;text-transform:uppercase;color:#d7cbb1!important}
+    section{padding:100px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 48px}
+    .section-head p{max-width:620px;margin-inline:auto}
+    .intro-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:65px}
+    .intro-photo{position:relative;padding:0 25px 25px 0}
+    .intro-photo::after{content:"";position:absolute;right:0;bottom:0;width:68%;height:70%;border:1px solid var(--gold);z-index:-1}
+    .intro-photo img{height:500px;object-fit:cover;filter:saturate(.78)}
+    .intro-copy p{margin:18px 0}
+    .mini-rule{width:65px;height:1px;background:var(--gold);margin:22px 0}
+    .services{background:#0e0e0e;border-block:1px solid #191919}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .service{background:#0e0e0e;padding:28px 24px;min-height:145px}
+    .service-num{font-size:.72rem;letter-spacing:.12em;color:var(--gold)}
+    .service h3{font-size:1.65rem;margin:10px 0 7px}
+    .service p{font-size:.82rem}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .gallery-card{position:relative;overflow:hidden;background:#151515;min-height:330px}
+    .gallery-card img{height:100%;min-height:330px;object-fit:cover;position:absolute;inset:0;transition:transform .6s;filter:saturate(.82)}
+    .gallery-card:hover img{transform:scale(1.06)}
+    .gallery-card::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent 65%)}
+    .gallery-label{position:absolute;z-index:1;bottom:20px;left:22px;right:22px}
+    .gallery-label h3{font-size:1.8rem}
+    .gallery-label span{color:var(--gold);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase}
+    .gallery-note{text-align:center;margin-top:22px;font-size:.8rem}
+    .pricing{background:#0e0e0e;border-block:1px solid #191919}
+    .package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+    .package{padding:34px 27px;border:1px solid var(--line);background:#101010;display:flex;flex-direction:column;position:relative}
+    .package.featured{border-color:var(--gold);background:linear-gradient(155deg,#19160f,#0e0e0e 60%)}
+    .popular{font-size:.65rem;letter-spacing:.17em;text-transform:uppercase;color:#111;background:var(--gold);padding:5px 10px;align-self:flex-start;margin-bottom:16px}
+    .package h3{font-size:2rem}
+    .package .price{font-family:"Cormorant Garamond",Georgia,serif;font-size:2.4rem;color:var(--gold-light);margin:17px 0 5px}
+    .package .price small{font:500 .72rem Montserrat,sans-serif;color:var(--muted)}
+    .package p{font-size:.82rem;margin-bottom:22px}
+    .package ul{list-style:none;margin:10px 0 28px;flex:1}
+    .package li{font-size:.82rem;color:#d5d0c7;padding:9px 0;border-bottom:1px solid #29251d}
+    .package li::before{content:"✦";color:var(--gold);margin-right:10px}
+    .package .btn{width:100%}
+    .event-prices{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .event-price{border:1px solid #29251d;padding:22px;text-align:center}
+    .event-price h3{font-size:1.55rem}
+    .event-price strong{display:block;color:var(--gold);font-size:1.2rem;margin-top:8px;font-weight:500}
+    .event-price p{font-size:.75rem}
+    .quote-band{padding:70px 0;text-align:center;background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),url("https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1800&q=85") center/cover}
+    .quote-band blockquote{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2rem,4.5vw,3.6rem);max-width:900px;margin:15px auto;color:#fff;line-height:1.2}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+    .contact-copy p{margin:14px 0}
+    .contact-details{margin-top:25px}
+    .contact-line{padding:14px 0;border-bottom:1px solid #2a261e}
+    .contact-line span{display:block;color:var(--gold);font-size:.65rem;text-transform:uppercase;letter-spacing:.15em}
+    .contact-line a,.contact-line strong{font-size:.92rem;overflow-wrap:anywhere}
+    .contact-box{padding:32px;border:1px solid var(--line);background:#101010}
+    .contact-box h3{font-size:2rem;margin-bottom:12px}
+    .contact-box p{margin-bottom:22px}
+    .socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .socials a{border:1px solid #383125;padding:10px 13px;font-size:.7rem;color:var(--gold-light)}
+    .socials a:hover{background:var(--gold);color:#111}
+    footer{border-top:1px solid var(--line);padding:28px 0}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+    footer p{font-size:.72rem}
+    .footer-brand{color:var(--gold);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.5rem}
+    .wa-float{position:fixed;right:20px;bottom:20px;z-index:90;border-radius:999px;padding:13px 18px;background:#d6b36a;color:#111;font-size:.75rem;font-weight:700;box-shadow:0 8px 30px #0008}
+    .wa-float:hover{background:#f0dba6}
+    @media(max-width:900px){
+      .nav-links{gap:13px}.nav-links a{font-size:.62rem}
+      .intro-grid,.contact-grid{gap:35px}
+      .service-grid{grid-template-columns:repeat(2,1fr)}
+      .gallery-grid{grid-template-columns:repeat(2,1fr)}
+      .package-grid{gap:10px}
+      .package{padding:28px 19px}
+      .package .price{font-size:2rem}
+    }
+    @media(max-width:680px){
+      .nav{min-height:70px;flex-wrap:wrap;padding:12px 0}
+      .brand{font-size:1.55rem}
+      .menu-btn{display:block}
+      .nav-links{display:none;width:100%;padding:12px 0 8px;flex-direction:column;align-items:flex-start;gap:0}
+      .nav-links.open{display:flex}
+      .nav-links a{width:100%;padding:12px 4px;border-top:1px solid #242018;font-size:.72rem}
+      .hero{min-height:680px}
+      .hero h1{font-size:clamp(3.4rem,15vw,5.5rem)}
+      section{padding:72px 0}
+      .intro-grid,.contact-grid{grid-template-columns:1fr}
+      .intro-photo img{height:380px}
+      .service-grid{grid-template-columns:1fr 1fr}
+      .service{padding:22px 16px;min-height:135px}
+      .service h3{font-size:1.4rem}
+      .gallery-grid{gap:10px}
+      .gallery-card,.gallery-card img{min-height:245px}
+      .gallery-label{left:13px;bottom:13px}
+      .gallery-label h3{font-size:1.35rem}
+      .package-grid{grid-template-columns:1fr}
+      .package{padding:30px}
+      .event-prices{grid-template-columns:1fr}
+      .contact-box{padding:25px}
+      .wa-float{right:12px;bottom:12px;padding:12px 15px}
+    }
+    @media(max-width:390px){
+      .wrap{width:92%}
+      .service-grid{grid-template-columns:1fr}
+      .gallery-grid{grid-template-columns:1fr}
+      .gallery-card,.gallery-card img{min-height:320px}
+      .hero-actions .btn{width:100%}
+    }
   </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap">
-      <nav>
-        <a class="brand" href="#home">ZAMI <span>WEDDING PHOTOGRAPHY</span></a>
-        <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
-        <div class="navlinks" id="navlinks">
-          <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
-        </div>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="ZaMi Wedding Studio home">ZaMi <span class="gold">Wedding Studio</span><small>Photography · Films · Memories</small></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">Our Story</a><a href="#services">Services</a><a href="#gallery">Portfolio</a><a href="#packages">Packages</a><a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-content">
-        <div class="eyebrow">Timeless moments · Beautifully told</div>
-        <h1>Your story,<br><em>forever remembered.</em></h1>
-        <p>Elegant wedding photography for the moments, emotions and little details you’ll want to relive for a lifetime.</p>
-        <a class="btn fill" href="#portfolio">Explore Our Work</a>
-        &nbsp; <a class="btn" href="#contact">Book Your Date</a>
+      <div class="wrap hero-content">
+        <div class="eyebrow">Kegalle · Sri Lanka</div>
+        <h1>Every Moment,<span>Forever Remembered.</span></h1>
+        <p>Honest emotions, timeless portraits and cinematic stories — beautifully captured by ZaMi Wedding Studio.</p>
+        <div class="hero-actions">
+          <a class="btn filled" href="#gallery">Explore Our Work</a>
+          <a class="btn" href="https://wa.me/94704692856?text=Hello%20ZaMi%20Wedding%20Studio%2C%20I%27d%20like%20to%20make%20a%20booking." target="_blank" rel="noopener">Book on WhatsApp</a>
+        </div>
+        <p class="hero-note">Wedding Photography · Videography · Special Events</p>
       </div>
     </section>
 
     <section id="about">
-      <div class="wrap intro">
-        <div class="intro-image"><img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=1000&q=85" alt="Wedding couple portrait"></div>
+      <div class="wrap intro-grid">
+        <div class="intro-photo">
+          <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1100&q=85" alt="Bride and groom celebrating their wedding" loading="lazy">
+        </div>
         <div class="intro-copy">
-          <div class="eyebrow">A little about us</div>
-          <h2>We capture the feeling, not just the picture.</h2>
-          <div class="goldline" style="margin-left:0"></div>
-          <p>At Zami Wedding Photography, every celebration has its own story. We focus on genuine emotion, graceful portraits and the beautiful details that make your day uniquely yours.</p>
-          <p>From the first look to the final dance, we turn fleeting moments into photographs you can treasure for years to come.</p>
-          <div class="signature">Your memories, our passion.</div>
+          <div class="eyebrow">A story worth keeping</div>
+          <h2>More than pictures.<br><span class="gold">Your memories.</span></h2>
+          <div class="mini-rule"></div>
+          <p>At ZaMi Wedding Studio, we capture the moments that make your story yours — the happy tears, the laughter, the little details and the unforgettable celebrations.</p>
+          <p>From wedding photography and cinematic films to engagements, birthdays and special events, our goal is to create photographs you will treasure for a lifetime.</p>
+          <p class="gold">Based in Kegalle, Sri Lanka.</p>
+          <a class="btn" href="#contact">Let's Talk About Your Day</a>
         </div>
       </div>
     </section>
 
     <section class="services" id="services">
       <div class="wrap">
-        <div class="section-head"><div class="eyebrow">What we capture</div><h2>Our Photography</h2><div class="goldline"></div><p>Thoughtful storytelling and timeless imagery for every chapter of your love story.</p></div>
-        <div class="cards">
-          <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Wedding photography"></div><div class="card-copy"><h3>Wedding</h3><p>Honest emotions, beautiful details and every unforgettable moment of your big day.</p></div></article>
-          <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85" alt="Engagement photography"></div><div class="card-copy"><h3>Engagement</h3><p>Celebrate the beginning of your forever with natural, elegant portraits.</p></div></article>
-          <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85" alt="Couple portrait photography"></div><div class="card-copy"><h3>Pre-Shoot & Portraits</h3><p>Relaxed, romantic photographs that reflect your personality and connection.</p></div></article>
+        <div class="section-head">
+          <div class="eyebrow">What we do</div>
+          <h2>Made for <span class="gold">your moments.</span></h2>
+          <p>Thoughtful coverage for the milestones and memories that matter most.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service"><span class="service-num">01 / WEDDINGS</span><h3>Wedding Photography</h3><p>Beautiful portraits and genuine moments from your special day.</p></article>
+          <article class="service"><span class="service-num">02 / FILMS</span><h3>Wedding Videography</h3><p>Cinematic storytelling to relive your celebration.</p></article>
+          <article class="service"><span class="service-num">03 / COUPLES</span><h3>Couple Photoshoots</h3><p>Natural, romantic portraits that feel like you.</p></article>
+          <article class="service"><span class="service-num">04 / ENGAGEMENT</span><h3>Pre-shoot & Engagement</h3><p>Celebrate the beginning of your forever.</p></article>
+          <article class="service"><span class="service-num">05 / CELEBRATIONS</span><h3>Birthdays & Homecoming</h3><p>Every milestone, captured with care.</p></article>
+          <article class="service"><span class="service-num">06 / MORE</span><h3>Commercial & Drone</h3><p>Creative event coverage and aerial perspectives.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="portfolio">
+    <section id="gallery">
       <div class="wrap">
-        <div class="section-head"><div class="eyebrow">Selected moments</div><h2>Our Portfolio</h2><div class="goldline"></div><p>A glimpse of the stories we love to tell. Replace these sample images with your own best photographs.</p></div>
-        <div class="gallery-grid">
-          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85" alt="Wedding couple"></div>
-          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=85" alt="Wedding celebration"></div>
-          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=900&q=85" alt="Bride portrait"></div>
-          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85" alt="Couple portrait"></div>
-          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85" alt="Wedding moment"></div>
+        <div class="section-head">
+          <div class="eyebrow">Selected moments</div>
+          <h2>Our <span class="gold">Portfolio.</span></h2>
+          <p>A glimpse into the celebrations, connections and details we love to capture.</p>
         </div>
+        <div class="gallery-grid">
+          <a class="gallery-card" href="#contact"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Wedding ceremony" loading="lazy"><div class="gallery-label"><span>01 / Wedding</span><h3>Wedding Stories</h3></div></a>
+          <a class="gallery-card" href="#contact"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=85" alt="Wedding couple portrait" loading="lazy"><div class="gallery-label"><span>02 / Engagement</span><h3>Two Hearts, One Story</h3></div></a>
+          <a class="gallery-card" href="#contact"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85" alt="Birthday celebration table" loading="lazy"><div class="gallery-label"><span>03 / Birthday</span><h3>Celebrate the Day</h3></div></a>
+          <a class="gallery-card" href="#contact"><img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85" alt="Family and baby portrait" loading="lazy"><div class="gallery-label"><span>04 / Baby Shoot</span><h3>Little Wonders</h3></div></a>
+          <a class="gallery-card" href="#contact"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Aerial landscape view" loading="lazy"><div class="gallery-label"><span>05 / Drone</span><h3>A Different Perspective</h3></div></a>
+          <a class="gallery-card" href="#contact"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85" alt="Wedding details" loading="lazy"><div class="gallery-label"><span>06 / Details</span><h3>Every Little Detail</h3></div></a>
+        </div>
+        <p class="gallery-note">Portfolio images are temporary examples. Replace these image URLs with your own photographs for the final website.</p>
       </div>
     </section>
 
-    <section class="quote">
-      <div class="wrap"><div class="eyebrow">More than photographs</div><blockquote>“The best thing about memories is making them.”</blockquote><p>Zami Wedding Photography</p></div>
+    <section class="pricing" id="packages">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Your day, your way</div>
+          <h2>Photography <span class="gold">Packages.</span></h2>
+          <p>Choose the wedding collection that suits your celebration. Contact us to confirm coverage and availability.</p>
+        </div>
+        <div class="package-grid">
+          <article class="package">
+            <h3>Silver</h3><div class="price">Rs. 99,000</div><p>A thoughtful way to preserve your special day.</p>
+            <ul><li>Wedding photography package</li><li>Coverage details confirmed on enquiry</li><li>Booking by appointment</li></ul>
+            <a class="btn" href="https://wa.me/94704692856?text=Hello%20ZaMi%20Wedding%20Studio%2C%20I%27m%20interested%20in%20the%20Silver%20Wedding%20Package%20(Rs.%2099%2C000)." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </article>
+          <article class="package featured">
+            <span class="popular">Featured Collection</span><h3>Gold</h3><div class="price">Rs. 149,000</div><p>A balanced collection for the memories you want to keep.</p>
+            <ul><li>Wedding photography package</li><li>Coverage details confirmed on enquiry</li><li>Booking by appointment</li></ul>
+            <a class="btn filled" href="https://wa.me/94704692856?text=Hello%20ZaMi%20Wedding%20Studio%2C%20I%27m%20interested%20in%20the%20Gold%20Wedding%20Package%20(Rs.%20149%2C000)." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </article>
+          <article class="package">
+            <h3>Premium</h3><div class="price">Rs. 199,000</div><p>A premium option for a celebration you will remember forever.</p>
+            <ul><li>Wedding photography package</li><li>Coverage details confirmed on enquiry</li><li>Booking by appointment</li></ul>
+            <a class="btn" href="https://wa.me/94704692856?text=Hello%20ZaMi%20Wedding%20Studio%2C%20I%27m%20interested%20in%20the%20Premium%20Wedding%20Package%20(Rs.%20199%2C000)." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </article>
+        </div>
+        <div class="section-head" style="margin-top:65px;margin-bottom:25px">
+          <div class="eyebrow">Other celebrations</div><h2 style="font-size:2.6rem">Special Event <span class="gold">Rates.</span></h2>
+        </div>
+        <div class="event-prices">
+          <article class="event-price"><h3>Engagement</h3><p>Photography coverage</p><strong>Rs. 20,000</strong></article>
+          <article class="event-price"><h3>Birthday Shoot</h3><p>Birthday photography</p><strong>Rs. 17,000</strong></article>
+          <article class="event-price"><h3>Baby Shoot</h3><p>Baby portrait session</p><strong>Rs. 15,000</strong></article>
+        </div>
+        <p class="gallery-note">Package inclusions, timings, travel and any additional services should be confirmed directly before booking.</p>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="wrap">
+        <div class="eyebrow">ZaMi Wedding Studio</div>
+        <blockquote>“The best photographs don't just show how a moment looked. They bring back how it felt.”</blockquote>
+        <a class="btn" href="#contact">Let's Capture Your Story</a>
+      </div>
     </section>
 
     <section id="contact">
       <div class="wrap contact-grid">
-        <div class="contact-copy"><div class="eyebrow">Let’s create something beautiful</div><h2>Your date deserves to be remembered.</h2><div class="goldline" style="margin-left:0"></div><p>Tell us about your special day. Get in touch to check availability, discuss your photography package and reserve your date.</p><a class="btn fill" href="https://wa.me/94XXXXXXXXX?text=Hello%20Zami%20Wedding%20Photography%2C%20I%27d%20like%20to%20inquire%20about%20booking." target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+        <div class="contact-copy">
+          <div class="eyebrow">We'd love to hear from you</div>
+          <h2>Let's make it <span class="gold">memorable.</span></h2>
+          <p>Tell us about your event, your date and the memories you want us to capture. Get in touch to discuss packages and availability.</p>
+          <div class="contact-details">
+            <div class="contact-line"><span>Call us</span><a href="tel:+94704692856">070 469 2856</a></div>
+            <div class="contact-line"><span>Email</span><a href="mailto:zamiweddingstudio@gmail.com">zamiweddingstudio@gmail.com</a></div>
+            <div class="contact-line"><span>Location</span><strong>Kegalle, Sri Lanka</strong></div>
+          </div>
+          <div class="socials">
+            <a href="https://www.facebook.com/share/19DQgEWuFv/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook Page ↗</a>
+          </div>
+        </div>
         <div class="contact-box">
-          <div class="contact-row"><small>Studio</small><strong>Zami Wedding Photography</strong></div>
-          <div class="contact-row"><small>WhatsApp / Phone</small><strong>Update with your phone number</strong></div>
-          <div class="contact-row"><small>Instagram / Facebook</small><strong>Add your social media links</strong></div>
-          <div class="contact-row"><small>Bookings</small><strong>Wedding · Engagement · Pre-Shoot</strong></div>
+          <div class="eyebrow">Bookings & enquiries</div>
+          <h3>Start with a message.</h3>
+          <p>WhatsApp us with your event type and preferred date. We'll get back to you to discuss the details.</p>
+          <a class="btn filled" style="width:100%" href="https://wa.me/94704692856?text=Hello%20ZaMi%20Wedding%20Studio!%20I%27d%20like%20to%20enquire%20about%20a%20booking.%0AEvent%20type%3A%20%0AEvent%20date%3A%20%0ALocation%3A%20" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+          <p style="font-size:.75rem;margin-top:18px">Please confirm package inclusions and availability before making a booking.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="wrap footer-inner"><div>© <span id="year"></span> <span>Zami Wedding Photography</span>. All rights reserved.</div><div>Made with care for your forever memories.</div></div></footer>
-  <a class="whatsapp" href="https://wa.me/94XXXXXXXXX?text=Hello%20Zami%20Wedding%20Photography" target="_blank" rel="noopener">WhatsApp Booking ↗</a>
+  <footer>
+    <div class="wrap footer-inner">
+      <div><div class="footer-brand">ZaMi Wedding Studio</div><p>Every Moment, Forever Remembered.</p></div>
+      <p>© <span id="year"></span> ZaMi Wedding Studio · Kegalle, Sri Lanka</p>
+    </div>
+  </footer>
+  <a class="wa-float" href="https://wa.me/94704692856?text=Hello%20ZaMi%20Wedding%20Studio!" target="_blank" rel="noopener" aria-label="Chat with ZaMi Wedding Studio on WhatsApp">WhatsApp ↗</a>
   <script>
-    const menuBtn=document.getElementById('menuBtn');
-    const links=document.getElementById('navlinks');
-    menuBtn.addEventListener('click',()=>links.classList.toggle('open'));
-    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
-    document.getElementById('year').textContent=new Date().getFullYear();
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+      menuBtn.textContent = isOpen ? '×' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#fffdf8"><meta name="description" content="ZaMi Wedding Studio — timeless stories, beautifully captured.">
-<title>ZaMi Wedding Studio | Timeless Stories</title>
-<link rel="preconnect" href="https://images.unsplash.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#0b0b0b;--panel:#131313;--gold:#d6b36a;--gold2:#f1d99d;--white:#f7f4ed;--muted:#aaa69e;--line:#292723}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,91%);margin:auto}.topbar{position:absolute;z-index:3;top:0;left:0;right:0;border-bottom:1px solid #ffffff20}.nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-family:'Playfair Display',serif;letter-spacing:2px;font-size:22px}.brand small{display:block;font:9px 'DM Sans',sans-serif;letter-spacing:4px;color:var(--gold);margin-top:5px}.navlinks{display:flex;gap:27px;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#eee}.navlinks a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border:1px solid var(--gold);color:var(--gold2);font-size:11px;letter-spacing:1.6px;text-transform:uppercase;transition:.2s}.nav-cta:hover,.btn:hover{background:var(--gold);color:#111}.hero{min-height:730px;height:94vh;max-height:900px;position:relative;display:flex;align-items:center;background:linear-gradient(90deg,rgba(5,5,5,.83) 0%,rgba(5,5,5,.46) 48%,rgba(5,5,5,.12) 100%),linear-gradient(0deg,#0b0b0b 0%,transparent 27%),url('https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=2200&q=88') center 35%/cover}.hero-copy{max-width:660px;padding-top:80px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:4px;text-transform:uppercase}.hero h1{font:clamp(58px,8.5vw,112px)/.98 'Playfair Display',serif;font-weight:500;letter-spacing:-1.5px;margin:22px 0;max-width:950px;text-shadow:0 3px 24px #0009}.hero h1 em{display:inline-block;color:var(--gold2);font-weight:400;font-size:.78em;letter-spacing:0}.hero h1 em{color:var(--gold2);font-weight:400}.hero p{color:#e0ddd6;line-height:1.9;font-size:15px;max-width:440px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn.filled{background:var(--gold);color:#111}.scrollnote{position:absolute;right:4.5%;bottom:70px;writing-mode:vertical-rl;letter-spacing:3px;color:#ded6c5;font-size:9px}.section{padding:105px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 45px}.section-head h2{font:clamp(34px,4vw,51px)/1.15 'Playfair Display',serif;font-weight:400;margin:15px 0}.section-head p{color:var(--muted);line-height:1.8;font-size:14px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.intro-img{height:510px;position:relative;background:url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85') center/cover}.intro-img:after{content:'';position:absolute;inset:18px -18px -18px 18px;border:1px solid #d6b36a70;z-index:-1}.intro-text h2{font:clamp(35px,4vw,52px)/1.15 'Playfair Display',serif;font-weight:400}.intro-text p{color:var(--muted);line-height:1.95;font-size:14px}.signature{font-family:'Playfair Display',serif;color:var(--gold2);font-size:25px;margin-top:25px}.services{background:#101010}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{border:1px solid var(--line);padding:30px 25px;min-height:190px;background:linear-gradient(145deg,#171715,#0d0d0d)}.service .num{color:var(--gold);font-size:11px;letter-spacing:2px}.service h3{font:25px 'Playfair Display',serif;font-weight:400;margin:19px 0 10px}.service p{color:var(--muted);font-size:13px;line-height:1.7;margin:0}.portfolio-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;grid-template-rows:240px 240px;gap:14px}.shot{position:relative;overflow:hidden;background:#222}.shot:first-child{grid-row:span 2}.shot:nth-child(4){grid-column:2 / span 2}.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s;filter:saturate(.83)}.shot:hover img{transform:scale(1.05)}.shot:after{content:'';position:absolute;inset:40% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.78))}.shot span{position:absolute;z-index:1;left:20px;bottom:18px;font:22px 'Playfair Display',serif}.center{text-align:center;margin-top:35px}.packages{background:#101010}.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}.package{padding:35px 28px;border:1px solid var(--line);background:#0c0c0c}.package.featured{border-color:var(--gold);transform:translateY(-9px)}.package .tag{font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase}.package h3{font:30px 'Playfair Display',serif;font-weight:400;margin:15px 0}.package .price{font-size:13px;color:var(--muted);padding-bottom:20px;border-bottom:1px solid var(--line)}.package ul{list-style:none;padding:0;margin:24px 0 28px;color:#d1cec7;font-size:13px;line-height:2.4}.package li:before{content:'✦';color:var(--gold);font-size:10px;margin-right:10px}.package .btn{width:100%}.quote{padding:100px 0;text-align:center;background:linear-gradient(#080808c9,#080808e8),url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1800&q=80') center/cover}.quote blockquote{font:clamp(28px,4vw,45px)/1.35 'Playfair Display',serif;max-width:800px;margin:22px auto}.quote small{letter-spacing:3px;color:var(--gold);font-size:10px}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px}.contact-info h2{font:clamp(35px,4vw,52px)/1.15 'Playfair Display',serif;font-weight:400}.contact-info p{color:var(--muted);line-height:1.8;font-size:14px}.contact-detail{margin-top:25px;color:#ddd;font-size:13px;line-height:2}.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}.field label{font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold)}input,select,textarea{width:100%;background:#131313;border:1px solid #34312a;padding:14px;color:#fff;font:13px 'DM Sans',sans-serif;border-radius:0;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:110px;resize:vertical}.contact-form button{cursor:pointer;font-family:inherit;grid-column:1/-1}.foot{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:11px}.footrow{display:flex;justify-content:space-between;align-items:center;gap:20px}.foot strong{font-family:'Playfair Display',serif;color:var(--gold2);font-size:17px;letter-spacing:1px}.wa{position:fixed;right:22px;bottom:22px;z-index:4;background:#d6b36a;color:#101010;padding:14px 19px;font-size:11px;letter-spacing:1px;box-shadow:0 5px 25px #0008}.wa:hover{background:#f1d99d}.notice{font-size:11px;color:#8e897f;margin-top:12px;line-height:1.6}.mobile-menu{display:none}
-@media(max-width:800px){.nav{height:75px}.navlinks{display:none}.nav-cta{padding:11px 12px;font-size:9px}.hero{min-height:680px;height:88vh;background-position:58% center}.hero-copy{padding-top:90px}.scrollnote{display:none}.section{padding:75px 0}.intro-grid,.contact-grid{grid-template-columns:1fr;gap:40px}.intro-img{height:390px;margin-right:18px}.service-grid{grid-template-columns:1fr 1fr}.portfolio-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}.shot:first-child{grid-row:auto}.shot:nth-child(4){grid-column:auto}.package-grid{grid-template-columns:1fr}.package.featured{transform:none}.footrow{flex-direction:column;text-align:center}.contact-form{grid-template-columns:1fr}.field.full{grid-column:auto}.contact-form button{grid-column:auto}}
-@media(max-width:480px){.brand{font-size:18px}.hero h1{font-size:clamp(44px,12vw,58px);letter-spacing:-.8px}.hero h1 em{font-size:.76em}.hero p{font-size:13px}.service-grid{grid-template-columns:1fr}.portfolio-grid{grid-template-rows:180px 180px 180px}.shot span{font-size:18px;left:12px;bottom:12px}.wa{right:12px;bottom:12px}}
-
-/* White & Gold refresh */
-:root{--bg:#fffdf8;--panel:#fffaf0;--gold:#b18a3d;--gold2:#d0ad63;--white:#29251e;--muted:#777064;--line:#e8dfcc}
-body{background:var(--bg);color:var(--white)}
-.topbar{background:rgba(255,253,248,.94);border-bottom:1px solid #d8c59b}
-.brand{color:#27231d}.brand small{color:#a98131}.navlinks{color:#514a3e}.navlinks a:hover{color:#a98131}
-.nav-cta,.btn{color:#96702a;border-color:#b18a3d}.nav-cta:hover,.btn:hover{background:#b18a3d;color:#fff}
-.hero{background:linear-gradient(90deg,rgba(18,15,10,.72) 0%,rgba(18,15,10,.38) 48%,rgba(18,15,10,.08) 100%),linear-gradient(0deg,#fffdf8 0%,transparent 27%),url('https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=2200&q=88') center 35%/cover}
-.hero .eyebrow{color:#f0d69d}.hero h1,.hero p{color:#fff}.hero h1 em{color:#f0d69d}.hero p{color:#f5f1e9}.scrollnote{color:#f3e6ca}
-.btn.filled{background:#b18a3d;border-color:#b18a3d;color:#fff}.btn.filled:hover{background:#96702a}
-.section-head p,.intro-text p,.service p,.package .price,.contact-info p{color:#777064}
-.intro-img:after{border-color:#b18a3d70}
-.services,.packages{background:#f5f0e5}
-.service{background:linear-gradient(145deg,#fffdf8,#f8f1e4);border-color:#e5d8bd}
-.service h3,.section-head h2,.intro-text h2,.contact-info h2,.package h3{color:#30291f}
-.package{background:#fffdf8;border-color:#e5d8bd}.package.featured{border-color:#b18a3d}.package ul{color:#5f574b}.package .tag,.field label{color:#a98131}
-.quote{background:linear-gradient(#17130d9c,#17130de8),url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1800&q=80') center/cover}
-.contact-detail{color:#514a3e}input,select,textarea{background:#fff;border-color:#e0d3b8;color:#30291f}input::placeholder,textarea::placeholder{color:#8b8376}input:focus,select:focus,textarea:focus{border-color:#b18a3d}
-.foot{border-top-color:#e5d8bd;color:#777064}.foot strong{color:#a98131}.wa{background:#b18a3d;color:#fff}.wa:hover{background:#96702a}.notice{color:#817868}
-@media(max-width:800px){.topbar{background:rgba(255,253,248,.97)}}
-
-</style></head>
-<body>
-<header class="topbar"><div class="wrap nav"><a class="brand" href="#home">ZaMi<small>WEDDING STUDIO</small></a><nav class="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#contact">Contact</a></nav><a class="nav-cta" href="#contact">Book Your Date ↗</a></div></header>
-<main>
-<section class="hero" id="home"><div class="wrap"><div class="hero-copy"><div class="eyebrow">Authentic moments · Artfully told</div><h1>ZaMi<br><em>Wedding Studio</em></h1><p>Timeless wedding photography and heartfelt visual stories — crafted to bring you back to the moments that matter most.</p><div class="hero-actions"><a class="btn filled" href="#portfolio">Explore Our Work ↗</a><a class="btn" href="#contact">Let's Talk</a></div></div></div><div class="scrollnote">SCROLL TO DISCOVER ↓</div></section>
-<section class="section" id="about"><div class="wrap intro-grid"><div class="intro-img" role="img" aria-label="Wedding couple portrait"></div><div class="intro-text"><div class="eyebrow">A little about us</div><h2>Not just pictures.<br>Pieces of your story.</h2><p>At ZaMi Wedding Studio, we believe the most beautiful photographs are the ones that make you feel something. The quiet glances, happy tears, loud laughter and little in-between moments deserve to be remembered.</p><p>With a creative eye and a thoughtful approach, we capture your day naturally — so you can be present while we preserve the memories.</p><div class="signature">ZaMi Wedding Studio</div></div></div></section>
-<section class="section services" id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What we capture</div><h2>Made of moments</h2><p>From the first look to the final dance, we create imagery that feels as special as the day itself.</p></div><div class="service-grid"><article class="service"><div class="num">01 / WEDDINGS</div><h3>Wedding Photography</h3><p>Every emotion, every detail, every unforgettable moment of your celebration.</p></article><article class="service"><div class="num">02 / COUPLES</div><h3>Pre-shoots & Engagements</h3><p>Relaxed, romantic portraits that celebrate your connection and story.</p></article><article class="service"><div class="num">03 / CELEBRATIONS</div><h3>Events & Functions</h3><p>Beautiful coverage for birthdays, family events and special gatherings.</p></article><article class="service"><div class="num">04 / PORTRAITS</div><h3>Portrait Photography</h3><p>Personal, creative portraits that let your personality shine through.</p></article><article class="service"><div class="num">05 / BRAND STORIES</div><h3>Commercial & Lifestyle</h3><p>Thoughtful visuals for businesses, products and personal brands.</p></article><article class="service"><div class="num">06 / FILM</div><h3>Video & Cinematic Films</h3><p>Moving memories, told with atmosphere, rhythm and feeling.</p></article></div></div></section>
-<section class="section" id="portfolio"><div class="wrap"><div class="section-head"><div class="eyebrow">Selected stories</div><h2>Love, in every frame.</h2><p>A glimpse into the celebrations, people and details we love to capture.</p></div><div class="portfolio-grid"><div class="shot"><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85" alt="Wedding couple outdoors"><span>The Wedding</span></div><div class="shot"><img loading="lazy" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=85" alt="Bride and groom portrait"><span>Golden Hour</span></div><div class="shot"><img loading="lazy" src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=85" alt="Wedding details"><span>Little Details</span></div><div class="shot"><img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85" alt="Wedding celebration"><span>Joyful Beginnings</span></div></div><div class="center"><a class="btn" href="#contact">Create Your Story With Us ↗</a></div><p class="notice" style="text-align:center">Sample portfolio images shown for preview. Replace these with your own photography before publishing.</p></div></section>
-<section class="quote"><div class="wrap"><small>THE BEAUTY IS IN THE MOMENTS</small><blockquote>“The best thing about memories is making them. The best thing about photographs is keeping them.”</blockquote><div class="eyebrow">ZaMi Wedding Studio</div></div></section>
-<section class="section packages" id="packages"><div class="wrap"><div class="section-head"><div class="eyebrow">Thoughtfully tailored</div><h2>Find your perfect package</h2><p>Every celebration is different. Choose a starting point and we’ll tailor the details to your day.</p></div><div class="package-grid"><article class="package"><div class="tag">01 · Intimate</div><h3>Essential</h3><div class="price">For intimate celebrations & short coverage</div><ul><li>Event photography coverage</li><li>Professionally edited images</li><li>Private digital gallery</li><li>Personal planning consultation</li></ul><a class="btn" href="#contact" data-package="Essential">Ask for details</a></article><article class="package featured"><div class="tag">02 · Most loved</div><h3>Signature</h3><div class="price">For a full day of meaningful moments</div><ul><li>Extended event coverage</li><li>Curated edited image collection</li><li>Online gallery to share</li><li>Pre-event consultation</li></ul><a class="btn filled" href="#contact" data-package="Signature">Ask for details</a></article><article class="package"><div class="tag">03 · Complete</div><h3>Heirloom</h3><div class="price">For a fuller photo & film experience</div><ul><li>Comprehensive coverage options</li><li>Photo + film options</li><li>Premium album options</li><li>Custom timeline planning</li></ul><a class="btn" href="#contact" data-package="Heirloom">Ask for details</a></article></div><p class="notice" style="text-align:center">Prices are intentionally not listed yet. Add your real LKR prices and package inclusions before launch.</p></div></section>
-<section class="section" id="contact"><div class="wrap contact-grid"><div class="contact-info"><div class="eyebrow">Let's make it memorable</div><h2>Your date.<br>Our cameras.<br><span style="color:var(--gold)">Your story.</span></h2><p>Tell us a little about your plans. We’ll get back to you to discuss availability, your vision and the best package for your celebration.</p><div class="contact-detail">✦ Wedding & event photography<br>✦ Pre-shoots, portraits & more<br>✦ Based in Sri Lanka · Travel by arrangement</div><p class="contact-detail">WhatsApp: <a href="https://wa.me/94704692856" target="_blank" rel="noopener">070 469 2856</a><br>Facebook: <a href="https://www.facebook.com/share/19DQgEWuFv/?mibextid=wwXIfr" target="_blank" rel="noopener">Visit our Facebook page ↗</a></p></div><form class="contact-form" id="bookingForm"><div class="field"><label for="name">Your name *</label><input id="name" name="name" required placeholder="Full name"></div><div class="field"><label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" required placeholder="Your contact number"></div><div class="field"><label for="event">Type of shoot *</label><select id="event" name="event" required><option value="">Choose a service</option><option>Wedding Photography</option><option>Pre-shoot / Engagement</option><option>Event / Function</option><option>Portrait Photography</option><option>Commercial / Lifestyle</option><option>Video / Cinematic Film</option><option>Other</option></select></div><div class="field"><label for="date">Event date</label><input id="date" name="date" type="date"></div><div class="field full"><label for="message">Tell us about your plans</label><textarea id="message" name="message" placeholder="Location, package you're interested in, or any details..."></textarea></div><button class="btn filled" type="submit">Prepare Booking Enquiry ↗</button><p class="notice field full">Your booking enquiry will open in WhatsApp so you can send it directly to ZaMi Wedding Studio.</p></form></div></section>
-</main><footer class="foot"><div class="wrap footrow"><strong>ZaMi WEDDING STUDIO</strong><span>Timeless stories, beautifully captured.</span><a href="https://www.facebook.com/share/19DQgEWuFv/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook ↗</a><span>© <span id="year"></span> ZaMi Wedding Studio</span></div></footer><a class="wa" id="whatsappBtn" href="#contact" aria-label="WhatsApp booking">✦ WHATSAPP BOOKING</a>
-<script>
-// SETUP: Replace the placeholder with your WhatsApp number including country code, digits only (Sri Lanka example: 9477XXXXXXX).
-const WHATSAPP_NUMBER = '94704692856';
-document.getElementById('year').textContent=new Date().getFullYear();
-document.querySelectorAll('[data-package]').forEach(el=>el.addEventListener('click',()=>{const msg=document.getElementById('message');msg.value='I would like to know more about the '+el.dataset.package+' package.'}));
-function openWhatsApp(message){if(!/^\d{8,15}$/.test(WHATSAPP_NUMBER)){alert('WhatsApp number is not configured correctly. Please contact the website owner.');return false}window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(message),'_blank','noopener');return true}
-document.getElementById('whatsappBtn').addEventListener('click',e=>{e.preventDefault();openWhatsApp('Hello ZaMi Wedding Studio! I would like to ask about your photography services and availability.')});
-document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const msg=`Hello ZaMi Wedding Studio! I'd like to enquire about a booking.\nName: ${f.get('name')}\nPhone: ${f.get('phone')}\nService: ${f.get('event')}\nEvent date: ${f.get('date')||'Not decided'}\nDetails: ${f.get('message')||'None added'}`;openWhatsApp(msg)});
-</script></body></html>
